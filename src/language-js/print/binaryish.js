@@ -156,7 +156,7 @@ function printBinaryishExpression(path, options, print) {
       // level. The first item is guaranteed to be the first
       // left-most expression.
       ...headParts,
-      indent(rest),
+      rest,
     ],
     { id: groupId }
   );
