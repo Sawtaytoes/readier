@@ -138,6 +138,8 @@ function genericPrint(path, options, print, args) {
 }
 
 function printPathNoParens(path, options, print, args) {
+  // READIER: options.semi = false;
+
   const node = path.getValue();
   const semi = options.semi ? ";" : "";
 

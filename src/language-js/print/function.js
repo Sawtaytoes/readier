@@ -242,6 +242,7 @@ function printArrowChain(
     ),
     " =>",
     indentIfBreak(
+      // READIER: shouldPutBodyOnSeparateLine ? indent([" ", "(", line, bodyDoc, dedent(line), ")"]) : [" ", bodyDoc],
       shouldPutBodyOnSeparateLine ? indent([line, bodyDoc]) : [" ", bodyDoc],
       { groupId }
     ),

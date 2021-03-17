@@ -280,6 +280,7 @@ function fits(next, restCommands, width, options, hasLineSuffix, mustBeFlat) {
 function printDocToString(doc, options) {
   groupModeMap = {};
 
+  // READIER: const width = 0 // options.printWidth;
   const width = options.printWidth;
   const newLine = convertEndOfLineToChars(options.endOfLine);
   let pos = 0;
