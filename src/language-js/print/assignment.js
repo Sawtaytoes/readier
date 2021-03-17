@@ -2,7 +2,7 @@
 
 const { isNonEmptyArray, getStringWidth } = require("../../common/util");
 const {
-  builders: { line, group, indent, indentIfBreak },
+  builders: { line, group, dedent, indent, indentIfBreak },
   utils: { cleanDoc },
 } = require("../../document");
 const {
@@ -35,7 +35,18 @@ function printAssignment(
   switch (layout) {
     // First break after operator, then the sides are broken independently on their own lines
     case "break-after-operator":
-      return group([group(leftDoc), operator, group(indent([line, rightDoc]))]);
+      return group([group(leftDoc), operator, group(
+        indent([line, rightDoc])
+        // READIER
+        // indent([
+        //   " ",
+        //   "(",
+        //   line,
+        //   rightDoc,
+        //   dedent(line),
+        //   ")",
+        // ]),
+      )]);
 
     // First break right-hand side, then left-hand side
     case "never-break-after-operator":
