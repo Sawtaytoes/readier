@@ -174,12 +174,12 @@ async function* refuse_return() {
   }
 }
 refuse_return()
-  .return("string")
-  .then((result) => {
-    if (result.done) {
-      (result.value: string); // error: number | void ~> string
-    }
-  });
+.return("string")
+.then((result) => {
+  if (result.done) {
+    (result.value: string); // error: number | void ~> string
+  }
+});
 
 ================================================================================
 `;
@@ -234,12 +234,12 @@ async function* catch_return() {
 
 async () => {
   catch_return()
-    .throw("")
-    .then(({ value }) => {
-      if (value !== undefined) {
-        (value: void); // error: number ~> void
-      }
-    });
+  .throw("")
+  .then(({ value }) => {
+    if (value !== undefined) {
+      (value: void); // error: number ~> void
+    }
+  });
 };
 
 async function* yield_return() {
@@ -253,12 +253,12 @@ async function* yield_return() {
 
 async () => {
   yield_return()
-    .throw("")
-    .then(({ value }) => {
-      if (value !== undefined) {
-        (value: void); // error: number ~> void
-      }
-    });
+  .throw("")
+  .then(({ value }) => {
+    if (value !== undefined) {
+      (value: void); // error: number ~> void
+    }
+  });
 };
 
 ================================================================================

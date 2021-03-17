@@ -128,24 +128,24 @@ function f() {
 function x() {
   return (
     func2
-      //comment
-      .bar()
+    //comment
+    .bar()
   );
 }
 
 function f() {
   return (
     foo
-      // comment
-      .bar()
+    // comment
+    .bar()
   );
 }
 
 fn(function f() {
   return (
     foo
-      // comment
-      .bar()
+    // comment
+    .bar()
   );
 });
 

@@ -90,24 +90,24 @@ fn(function f() {
 function x() {
   throw (
     func2
-      //comment
-      .bar()
+    //comment
+    .bar()
   );
 }
 
 function f() {
   throw (
     foo
-      // comment
-      .bar()
+    // comment
+    .bar()
   );
 }
 
 fn(function f() {
   throw (
     foo
-      // comment
-      .bar()
+    // comment
+    .bar()
   );
 });
 

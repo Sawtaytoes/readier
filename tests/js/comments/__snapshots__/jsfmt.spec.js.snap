@@ -2521,11 +2521,11 @@ throw new ProcessSystemError({
 // Missing one level of indentation because of the comment
 const rootEpic = (actions, store) =>
   combineEpics(...epics)(actions, store)
-    // Log errors and continue.
-    .catch((err, stream) => {
-      getLogger().error(err)
-      return stream
-    })
+  // Log errors and continue.
+  .catch((err, stream) => {
+    getLogger().error(err)
+    return stream
+  })
 
 // optional trailing comma gets moved all the way to the beginning
 const regex = new RegExp(
@@ -2542,11 +2542,11 @@ import path from "path" // eslint-disable-line nuclide-internal/prefer-nuclide-u
 
 // Comments disappear in-between MemberExpressions
 Observable.of(process)
-  // Don't complete until we say so!
-  .merge(Observable.never())
-  // Get the errors.
-  .takeUntil(throwOnError ? errors.flatMap(Observable.throw) : errors)
-  .takeUntil(exit)
+// Don't complete until we say so!
+.merge(Observable.never())
+// Get the errors.
+.takeUntil(throwOnError ? errors.flatMap(Observable.throw) : errors)
+.takeUntil(exit)
 
 // Comments disappear inside of JSX
 ;<div>{/* Some comment */}</div>
@@ -2672,11 +2672,11 @@ throw new ProcessSystemError({
 // Missing one level of indentation because of the comment
 const rootEpic = (actions, store) =>
   combineEpics(...epics)(actions, store)
-    // Log errors and continue.
-    .catch((err, stream) => {
-      getLogger().error(err);
-      return stream;
-    });
+  // Log errors and continue.
+  .catch((err, stream) => {
+    getLogger().error(err);
+    return stream;
+  });
 
 // optional trailing comma gets moved all the way to the beginning
 const regex = new RegExp(
@@ -2693,11 +2693,11 @@ import path from "path"; // eslint-disable-line nuclide-internal/prefer-nuclide-
 
 // Comments disappear in-between MemberExpressions
 Observable.of(process)
-  // Don't complete until we say so!
-  .merge(Observable.never())
-  // Get the errors.
-  .takeUntil(throwOnError ? errors.flatMap(Observable.throw) : errors)
-  .takeUntil(exit);
+// Don't complete until we say so!
+.merge(Observable.never())
+// Get the errors.
+.takeUntil(throwOnError ? errors.flatMap(Observable.throw) : errors)
+.takeUntil(exit);
 
 // Comments disappear inside of JSX
 <div>{/* Some comment */}</div>;
@@ -4365,9 +4365,9 @@ function memberOutside() {
 function memberInAndOutWithCalls() {
   return (
     aFunction
-      .b// Reason for a
-      ()
-      .c.d()
+    .b// Reason for a
+    ()
+    .c.d()
   )
 }
 
@@ -4627,9 +4627,9 @@ function memberOutside() {
 function memberInAndOutWithCalls() {
   return (
     aFunction
-      .b// Reason for a
-      ()
-      .c.d()
+    .b// Reason for a
+    ()
+    .c.d()
   );
 }
 

@@ -322,30 +322,30 @@ angular.module('AngularAppModule')
 function f() {
   return (
     observableFromSubscribeFunction()
-      // Debounce manually rather than using editor.onDidStopChanging so that the debounce time is
-      // configurable.
-      .debounceTime(debounceInterval)
+    // Debounce manually rather than using editor.onDidStopChanging so that the debounce time is
+    // configurable.
+    .debounceTime(debounceInterval)
   );
 }
 
 _.a(a)
-  /* very very very very very very very long such that it is longer than 80 columns */
-  .a();
+/* very very very very very very very long such that it is longer than 80 columns */
+.a();
 
 _.a(
   a
 ) /* very very very very very very very long such that it is longer than 80 columns */
-  .a();
+.a();
 
 _.a(
   a
 ) /* very very very very very very very long such that it is longer than 80 columns */
-  .a();
+.a();
 
 Something
-  // $FlowFixMe(>=0.41.0)
-  .getInstance(this.props.dao)
-  .getters();
+// $FlowFixMe(>=0.41.0)
+.getInstance(this.props.dao)
+.getters();
 
 // Warm-up first
 measure().then(() => {
@@ -353,24 +353,24 @@ measure().then(() => {
 });
 
 measure() // Warm-up first
-  .then(() => {
-    SomethingLong();
-  });
+.then(() => {
+  SomethingLong();
+});
 
 const configModel = this.baseConfigurationService
-  .getCache()
-  .consolidated // global/default values (do NOT modify)
-  .merge(this.cachedWorkspaceConfig);
+.getCache()
+.consolidated // global/default values (do NOT modify)
+.merge(this.cachedWorkspaceConfig);
 
 this.doWriteConfiguration(target, value, options) // queue up writes to prevent race conditions
-  .then(
-    () => null,
-    (error) => {
-      return options.donotNotifyError
-      ? TPromise.wrapError(error)
-      : this.onError(error, target, value);
-    }
-  );
+.then(
+  () => null,
+  (error) => {
+    return options.donotNotifyError
+    ? TPromise.wrapError(error)
+    : this.onError(error, target, value);
+  }
+);
 
 ret = __DEV__
 ? // $FlowFixMe: this type differs according to the env
@@ -378,9 +378,9 @@ ret = __DEV__
 : a;
 
 angular
-  .module("AngularAppModule")
-  // Hello, I am comment.
-  .constant("API_URL", "http://localhost:8080/api");
+.module("AngularAppModule")
+// Hello, I am comment.
+.constant("API_URL", "http://localhost:8080/api");
 
 ================================================================================
 `;
@@ -420,11 +420,11 @@ nock(/test/)
 
 =====================================output=====================================
 nock(/test/)
-  .matchHeader("Accept", "application/json")
-  [httpMethodNock(method)]("/foo")
-  .reply(200, {
-    foo: "bar",
-  });
+.matchHeader("Accept", "application/json")
+[httpMethodNock(method)]("/foo")
+.reply(200, {
+  foo: "bar",
+});
 
 ================================================================================
 `;
@@ -455,20 +455,20 @@ window.Data[key]("foo")
 =====================================output=====================================
 [].forEach((key) => {
   data[key]("foo")
-    .then(() => console.log("bar"))
-    .catch(() => console.log("baz"));
+  .then(() => console.log("bar"))
+  .catch(() => console.log("baz"));
 });
 
 [].forEach((key) => {
   data("foo")
-    [key]("bar")
-    .then(() => console.log("bar"))
-    .catch(() => console.log("baz"));
+  [key]("bar")
+  .then(() => console.log("bar"))
+  .catch(() => console.log("baz"));
 });
 
 window.Data[key]("foo")
-  .then(() => a)
-  .catch(() => b);
+.then(() => a)
+.catch(() => b);
 
 ================================================================================
 `;
@@ -521,8 +521,8 @@ object[valid
 ? helper.responseBody(this.currentUser)
 : helper.responseBody(this.defaultUser)
 )
-  .map()
-  .filter();
+.map()
+.filter();
 
 (valid
 ? helper.responseBody(this.currentUser)
@@ -586,17 +586,17 @@ not.d3.scaleLinear()
 
 =====================================output=====================================
 d3.select("body")
-  .append("circle")
-  .at({ width: 30, fill: "#f0f" })
-  .st({ fontWeight: 600 });
+.append("circle")
+.at({ width: 30, fill: "#f0f" })
+.st({ fontWeight: 600 });
 
 const myScale = d3.scaleLinear().domain([1950, 1980]).range([0, width]);
 
 not.d3
-  .select("body")
-  .append("circle")
-  .at({ width: 30, fill: "#f0f" })
-  .st({ fontWeight: 600 });
+.select("body")
+.append("circle")
+.at({ width: 30, fill: "#f0f" })
+.st({ fontWeight: 600 });
 
 not.d3.scaleLinear().domain([1950, 1980]).range([0, width]);
 
@@ -656,9 +656,9 @@ export default function theFunction(action$, store) {
         value3: false,
       }),
     })
-      .filter((data) => theFilter(data))
-      .map(({ theType, ...data }) => theMap(theType, data))
-      .retryWhen((errors) => errors)
+    .filter((data) => theFilter(data))
+    .map(({ theType, ...data }) => theMap(theType, data))
+    .retryWhen((errors) => errors)
   );
 }
 
@@ -710,11 +710,11 @@ domain
 =====================================output=====================================
 domain.concept("Page").val("title", "string").vals("widgets", "Widget");
 domain
-  .concept("Widget")
-  .val("title", "string")
-  .val("color", "Color")
-  .val("foo", "Foo")
-  .val("bar", "Bar");
+.concept("Widget")
+.val("title", "string")
+.val("color", "Color")
+.val("foo", "Foo")
+.val("bar", "Bar");
 domain.concept("Widget").val("title", "string").val("color", "Color");
 domain.concept(CONCEPT_NAME).val("title").vals();
 
@@ -757,8 +757,8 @@ Object.keys(
 
 this.layoutPartsToHide = this.utils.hashset(
   _.flatMap(this.visibilityHandlers, (fn) => fn())
-    .concat(this.record.resolved_legacy_visrules)
-    .filter(Boolean)
+  .concat(this.record.resolved_legacy_visrules)
+  .filter(Boolean)
 );
 
 var jqxhr = $.ajax("example.php").done(doneFn).fail(failFn);
@@ -784,8 +784,8 @@ let column = new Column(null, conn)
 =====================================output=====================================
 const fetched = fetch("/foo");
 fetched
-  .then((response) => response.json())
-  .then((json) => processThings(json.data.things));
+.then((response) => response.json())
+.then((json) => processThings(json.data.things));
 
 let column = new Column(null, conn).table(data.table).json(data.column);
 
@@ -998,16 +998,16 @@ const z = obj.foo(-1).foo(import("2")).foo(!x).check(/[A-Z]/);
 
 // better on multiple lines:
 somePromise
-  .then(format)
-  .then((val) => doSomething(val))
-  .catch((err) => handleError(err));
+.then(format)
+.then((val) => doSomething(val))
+.catch((err) => handleError(err));
 
 // you can still force multi-line chaining with a comment:
 const sha256_2 = (data) =>
   crypto // breakme
-    .createHash("sha256")
-    .update(data)
-    .digest("hex");
+  .createHash("sha256")
+  .update(data)
+  .digest("hex");
 
 // examples from https://github.com/prettier/prettier/pull/4765
 
@@ -1030,25 +1030,25 @@ function palindrome(a, b) {
 // examples from https://github.com/prettier/prettier/issues/1565
 
 d3.select("body")
-  .selectAll("p")
-  .data([1, 2, 3])
-  .enter()
-  .style("color", "white");
+.selectAll("p")
+.data([1, 2, 3])
+.enter()
+.style("color", "white");
 
 Object.keys(props)
-  .filter((key) => key in own === false)
-  .reduce((a, key) => {
-    a[key] = props[key];
-    return a;
-  }, {});
+.filter((key) => key in own === false)
+.reduce((a, key) => {
+  a[key] = props[key];
+  return a;
+}, {});
 
 point().x(4).y(3).z(6).plot();
 
 assert.equal(this.$().text().trim(), "1000");
 
 something()
-  .then(() => doSomethingElse())
-  .then((result) => dontForgetThisAsWell(result));
+.then(() => doSomethingElse())
+.then((result) => dontForgetThisAsWell(result));
 
 db.branch(
   db.table("users").filter({ email }).count(),
@@ -1064,8 +1064,8 @@ const date = moment.utc(userInput).hour(0).minute(0).second(0);
 fetchUser(id).then(fetchAccountForUser).catch(handleFetchError);
 
 fetchUser(id) //
-  .then(fetchAccountForUser)
-  .catch(handleFetchError);
+.then(fetchAccountForUser)
+.catch(handleFetchError);
 
 // examples from https://github.com/prettier/prettier/issues/3107
 
@@ -1076,39 +1076,39 @@ function HelloWorld() {
   }).initVerify("foo_container");
 
   fejax
-    .ajax({
-      url: "/verification/",
-      dataType: "json",
-    })
-    .then(
-      (data) => {
-        this.setState({ isLoading: false });
-        this.initWidget(data);
-      },
-      (data) => {
-        this.logImpression("foo_fetch_error", data);
-        Flash.error(I18n.t("offline_identity.foo_issue"));
-      }
-    );
+  .ajax({
+    url: "/verification/",
+    dataType: "json",
+  })
+  .then(
+    (data) => {
+      this.setState({ isLoading: false });
+      this.initWidget(data);
+    },
+    (data) => {
+      this.logImpression("foo_fetch_error", data);
+      Flash.error(I18n.t("offline_identity.foo_issue"));
+    }
+  );
 }
 
 action$
-  .ofType(ActionTypes.SEARCHED_USERS)
-  .map((action) => action.payload.query)
-  .filter((q) => !!q)
-  .switchMap((q) =>
-    Observable.timer(800) // debounce
-      .takeUntil(action$.ofType(ActionTypes.CLEARED_SEARCH_RESULTS))
-      .mergeMap(() =>
-        Observable.merge(
-          Observable.of(replace(\`?q=\${q}\`)),
-          ajax
-            .getJSON(\`https://api.github.com/search/users?q=\${q}\`)
-            .map((res) => res.items)
-            .map(receiveUsers)
-        )
-      )
-  );
+.ofType(ActionTypes.SEARCHED_USERS)
+.map((action) => action.payload.query)
+.filter((q) => !!q)
+.switchMap((q) =>
+  Observable.timer(800) // debounce
+  .takeUntil(action$.ofType(ActionTypes.CLEARED_SEARCH_RESULTS))
+  .mergeMap(() =>
+    Observable.merge(
+      Observable.of(replace(\`?q=\${q}\`)),
+      ajax
+      .getJSON(\`https://api.github.com/search/users?q=\${q}\`)
+      .map((res) => res.items)
+      .map(receiveUsers)
+    )
+  )
+);
 
 window.FooClient.setVars({
   locale: getFooLocale({ page }),
@@ -1132,24 +1132,24 @@ class X {
 
 // should break when call expressions get complex
 x.a()
-  .b([c, [d, [e]]])
-  .f();
+.b([c, [d, [e]]])
+.f();
 x.a()
-  .b(c(d(e())))
-  .f();
+.b(c(d(e())))
+.f();
 x.a()
-  .b(\`\${c(d())}\`)
-  .f();
+.b(\`\${c(d())}\`)
+.f();
 
 xyz
-  .a()
-  .b()
-  .c(a(a(b(c(d().p).p).p).p));
+.a()
+.b()
+.c(a(a(b(c(d().p).p).p).p));
 
 var l = base
-  .replace(/^\\w*:\\/\\//, "")
-  .replace(/\\/$/, "")
-  .split("/").length;
+.replace(/^\\w*:\\/\\//, "")
+.replace(/\\/$/, "")
+.split("/").length;
 
 ================================================================================
 `;
@@ -1188,8 +1188,8 @@ const someLongVariableName = (
 );
 
 (veryLongVeryLongVeryLong || e)
-  .map((tickets) => TicketRecord.createFromSomeLongString())
-  .filter((obj) => !!obj);
+.map((tickets) => TicketRecord.createFromSomeLongString())
+.filter((obj) => !!obj);
 
 (
   veryLongVeryLongVeryLong
@@ -1202,8 +1202,8 @@ const someLongVariableName = (
   || anotherVeryLongVeryLongVeryLong
   || veryVeryVeryLongError
 )
-  .map((tickets) => TicketRecord.createFromSomeLongString())
-  .filter((obj) => !!obj);
+.map((tickets) => TicketRecord.createFromSomeLongString())
+.filter((obj) => !!obj);
 
 ================================================================================
 `;
@@ -1266,38 +1266,38 @@ if (testConfig.ENABLE_ONLINE_TESTS === "true") {
 }
 
 wrapper
-  .find("SomewhatLongNodeName")
-  .prop("longPropFunctionName")()
-  .then(function () {
-    doSomething();
-  });
+.find("SomewhatLongNodeName")
+.prop("longPropFunctionName")()
+.then(function () {
+  doSomething();
+});
 
 wrapper
-  .find("SomewhatLongNodeName")
-  .prop("longPropFunctionName")("argument")
-  .then(function () {
-    doSomething();
-  });
+.find("SomewhatLongNodeName")
+.prop("longPropFunctionName")("argument")
+.then(function () {
+  doSomething();
+});
 
 wrapper
-  .find("SomewhatLongNodeName")
-  .prop(
-    "longPropFunctionName",
-    "second argument that pushes this group past 80 characters"
-  )("argument")
-  .then(function () {
-    doSomething();
-  });
+.find("SomewhatLongNodeName")
+.prop(
+  "longPropFunctionName",
+  "second argument that pushes this group past 80 characters"
+)("argument")
+.then(function () {
+  doSomething();
+});
 
 wrapper
-  .find("SomewhatLongNodeName")
-  .prop("longPropFunctionName")(
-    "argument",
-    "second argument that pushes this group past 80 characters"
-  )
-  .then(function () {
-    doSomething();
-  });
+.find("SomewhatLongNodeName")
+.prop("longPropFunctionName")(
+  "argument",
+  "second argument that pushes this group past 80 characters"
+)
+.then(function () {
+  doSomething();
+});
 
 ================================================================================
 `;
@@ -1326,20 +1326,20 @@ of("test")
 
 =====================================output=====================================
 of("test")
-  .pipe(throwIfEmpty())
-  .subscribe({
-    error(err) {
-      thrown = err;
-    },
-  });
+.pipe(throwIfEmpty())
+.subscribe({
+  error(err) {
+    thrown = err;
+  },
+});
 
 of("test")
-  .pipe(throwIfEmpty())
-  .subscribe({
-    get foo() {
-      bar();
-    },
-  });
+.pipe(throwIfEmpty())
+.subscribe({
+  get foo() {
+    bar();
+  },
+});
 
 ================================================================================
 `;
@@ -1391,9 +1391,9 @@ const svgJsFiles = fs
 
 =====================================output=====================================
 const svgJsFiles = fs
-  .readdirSync(svgDir)
-  .filter((f) => svgJsFileExtRegex.test(f))
-  .map((f) => path.join(svgDir, f));
+.readdirSync(svgDir)
+.filter((f) => svgJsFileExtRegex.test(f))
+.map((f) => path.join(svgDir, f));
 
 ================================================================================
 `;
@@ -1434,14 +1434,14 @@ const component = find('.org-lclp-edit-copy-url-banner__link')[0]
 
 =====================================output=====================================
 const version = someLongString
-  .split("jest version =")
-  .pop()
-  .split(EOL)[0]
-  .trim();
+.split("jest version =")
+.pop()
+.split(EOL)[0]
+.trim();
 
 const component = find(".org-lclp-edit-copy-url-banner__link")[0]
-  .getAttribute("href")
-  .indexOf(this.landingPageLink);
+.getAttribute("href")
+.indexOf(this.landingPageLink);
 
 ================================================================================
 `;
@@ -1461,9 +1461,9 @@ method().then(x => x)
 
 =====================================output=====================================
 method()
-  .then((x) => x)
-  ["abc"]((x) => x)
-  [abc]((x) => x);
+.then((x) => x)
+["abc"]((x) => x)
+[abc]((x) => x);
 
 ({}.a().b());
 ({}.a().b());
@@ -1483,8 +1483,8 @@ const sel = this.connections
 
 =====================================output=====================================
 const sel = this.connections
-  .concat(this.activities.concat(this.operators))
-  .filter((x) => x.selected);
+.concat(this.activities.concat(this.operators))
+.filter((x) => x.selected);
 
 ================================================================================
 `;

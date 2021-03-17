@@ -202,8 +202,8 @@ function testing() {
       return \`\${
         process.env.OPENID_URL
       }/something/something/something?\${Object.keys(p)
-        .map((k) => \`\${encodeURIComponent(k)}=\${encodeURIComponent(p[k])}\`)
-        .join("&")}\`;
+      .map((k) => \`\${encodeURIComponent(k)}=\${encodeURIComponent(p[k])}\`)
+      .join("&")}\`;
     }
   }
 }

@@ -63,16 +63,16 @@ const TodoList = ({ todos }) => (
 
 <div className="search-filter-chips">
   {scopes
-    .filter((scope) => scope.value !== "")
-    .map((scope, i) => (
-      <FilterChip
-        query={this.props.query}
-        onFilterChosen={this.onSearchScopeClicked}
-        key={i}
-        value={scope.value}
-        name={scope.name}
-      />
-    ))}
+  .filter((scope) => scope.value !== "")
+  .map((scope, i) => (
+    <FilterChip
+      query={this.props.query}
+      onFilterChosen={this.onSearchScopeClicked}
+      key={i}
+      value={scope.value}
+      name={scope.name}
+    />
+  ))}
 </div>;
 
 ================================================================================
@@ -141,16 +141,16 @@ const TodoList = ({ todos }) => (
 
 <div className='search-filter-chips'>
   {scopes
-    .filter((scope) => scope.value !== "")
-    .map((scope, i) => (
-      <FilterChip
-        query={this.props.query}
-        onFilterChosen={this.onSearchScopeClicked}
-        key={i}
-        value={scope.value}
-        name={scope.name}
-      />
-    ))}
+  .filter((scope) => scope.value !== "")
+  .map((scope, i) => (
+    <FilterChip
+      query={this.props.query}
+      onFilterChosen={this.onSearchScopeClicked}
+      key={i}
+      value={scope.value}
+      name={scope.name}
+    />
+  ))}
 </div>;
 
 ================================================================================
@@ -219,16 +219,16 @@ const TodoList = ({ todos }) => (
 
 <div className="search-filter-chips">
   {scopes
-    .filter((scope) => scope.value !== '')
-    .map((scope, i) => (
-      <FilterChip
-        query={this.props.query}
-        onFilterChosen={this.onSearchScopeClicked}
-        key={i}
-        value={scope.value}
-        name={scope.name}
-      />
-    ))}
+  .filter((scope) => scope.value !== '')
+  .map((scope, i) => (
+    <FilterChip
+      query={this.props.query}
+      onFilterChosen={this.onSearchScopeClicked}
+      key={i}
+      value={scope.value}
+      name={scope.name}
+    />
+  ))}
 </div>;
 
 ================================================================================
@@ -297,16 +297,16 @@ const TodoList = ({ todos }) => (
 
 <div className='search-filter-chips'>
   {scopes
-    .filter((scope) => scope.value !== '')
-    .map((scope, i) => (
-      <FilterChip
-        query={this.props.query}
-        onFilterChosen={this.onSearchScopeClicked}
-        key={i}
-        value={scope.value}
-        name={scope.name}
-      />
-    ))}
+  .filter((scope) => scope.value !== '')
+  .map((scope, i) => (
+    <FilterChip
+      query={this.props.query}
+      onFilterChosen={this.onSearchScopeClicked}
+      key={i}
+      value={scope.value}
+      name={scope.name}
+    />
+  ))}
 </div>;
 
 ================================================================================
@@ -2090,10 +2090,10 @@ singleQuote: false
 <SuspendyTree>
   <div style={{ height: 200, overflow: "scroll" }}>
     {Array(20)
-      .fill()
-      .map((_, i) => (
-        <h2 key={i}>{i + 1}</h2>
-      ))}
+    .fill()
+    .map((_, i) => (
+      <h2 key={i}>{i + 1}</h2>
+    ))}
   </div>
 </SuspendyTree>;
 
@@ -2378,10 +2378,10 @@ singleQuote: false
 <SuspendyTree>
   <div style={{ height: 200, overflow: "scroll" }}>
     {Array(20)
-      .fill()
-      .map((_, i) => (
-        <h2 key={i}>{i + 1}</h2>
-      ))}
+    .fill()
+    .map((_, i) => (
+      <h2 key={i}>{i + 1}</h2>
+    ))}
   </div>
 </SuspendyTree>;
 
@@ -2666,10 +2666,10 @@ singleQuote: true
 <SuspendyTree>
   <div style={{ height: 200, overflow: 'scroll' }}>
     {Array(20)
-      .fill()
-      .map((_, i) => (
-        <h2 key={i}>{i + 1}</h2>
-      ))}
+    .fill()
+    .map((_, i) => (
+      <h2 key={i}>{i + 1}</h2>
+    ))}
   </div>
 </SuspendyTree>;
 
@@ -2954,10 +2954,10 @@ singleQuote: true
 <SuspendyTree>
   <div style={{ height: 200, overflow: 'scroll' }}>
     {Array(20)
-      .fill()
-      .map((_, i) => (
-        <h2 key={i}>{i + 1}</h2>
-      ))}
+    .fill()
+    .map((_, i) => (
+      <h2 key={i}>{i + 1}</h2>
+    ))}
   </div>
 </SuspendyTree>;
 
