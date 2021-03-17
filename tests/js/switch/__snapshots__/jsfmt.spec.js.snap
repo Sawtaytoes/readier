@@ -331,14 +331,14 @@ switch (
 }
 
 switch (
-  $veryLongAndVeryVerboseVariableName &&
-  $anotherVeryLongAndVeryVerboseVariableName
+  $veryLongAndVeryVerboseVariableName
+  && $anotherVeryLongAndVeryVerboseVariableName
 ) {
 }
 
 switch (
-  $longButSlightlyShorterVariableName &&
-  $anotherSlightlyShorterVariableName
+  $longButSlightlyShorterVariableName
+  && $anotherSlightlyShorterVariableName
 ) {
 }
 

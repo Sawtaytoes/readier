@@ -895,8 +895,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -1194,8 +1194,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -1493,8 +1493,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -1792,8 +1792,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -2002,13 +2002,13 @@ singleQuote: false
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -2290,13 +2290,13 @@ singleQuote: false
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -2578,13 +2578,13 @@ singleQuote: true
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -2866,13 +2866,13 @@ singleQuote: true
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -3200,7 +3200,7 @@ singleQuote: false
 </div>;
 
 <div>
-  {__DEV__ && (
+  {__DEV__&& (
     <div>
       {routes.map((route) => (
         <MatchAsync
@@ -3282,7 +3282,7 @@ singleQuote: false
 </div>;
 
 <div>
-  {__DEV__ && (
+  {__DEV__&& (
     <div>
       {routes.map((route) => (
         <MatchAsync
@@ -3364,7 +3364,7 @@ singleQuote: true
 </div>;
 
 <div>
-  {__DEV__ && (
+  {__DEV__&& (
     <div>
       {routes.map((route) => (
         <MatchAsync
@@ -3446,7 +3446,7 @@ singleQuote: true
 </div>;
 
 <div>
-  {__DEV__ && (
+  {__DEV__&& (
     <div>
       {routes.map((route) => (
         <MatchAsync
@@ -3513,12 +3513,12 @@ singleQuote: false
 
 <div>{a && "b"}</div>;
 
-<div>{a || <span></span>}</div>;
+<div>{a|| <span></span>}</div>;
 
-<div>{a && <span></span>}</div>;
+<div>{a&& <span></span>}</div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3526,7 +3526,7 @@ singleQuote: false
 </div>;
 
 <div>
-  {a && b && (
+  {a && b&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3534,7 +3534,7 @@ singleQuote: false
 </div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       <div>
         <div></div>
@@ -3591,12 +3591,12 @@ singleQuote: false
 
 <div>{a && "b"}</div>;
 
-<div>{a || <span></span>}</div>;
+<div>{a|| <span></span>}</div>;
 
-<div>{a && <span></span>}</div>;
+<div>{a&& <span></span>}</div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3604,7 +3604,7 @@ singleQuote: false
 </div>;
 
 <div>
-  {a && b && (
+  {a && b&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3612,7 +3612,7 @@ singleQuote: false
 </div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       <div>
         <div></div>
@@ -3669,12 +3669,12 @@ singleQuote: true
 
 <div>{a && 'b'}</div>;
 
-<div>{a || <span></span>}</div>;
+<div>{a|| <span></span>}</div>;
 
-<div>{a && <span></span>}</div>;
+<div>{a&& <span></span>}</div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3682,7 +3682,7 @@ singleQuote: true
 </div>;
 
 <div>
-  {a && b && (
+  {a && b&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3690,7 +3690,7 @@ singleQuote: true
 </div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       <div>
         <div></div>
@@ -3747,12 +3747,12 @@ singleQuote: true
 
 <div>{a && 'b'}</div>;
 
-<div>{a || <span></span>}</div>;
+<div>{a|| <span></span>}</div>;
 
-<div>{a && <span></span>}</div>;
+<div>{a&& <span></span>}</div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3760,7 +3760,7 @@ singleQuote: true
 </div>;
 
 <div>
-  {a && b && (
+  {a && b&& (
     <span>
       make this text just so long enough to break this to the next line
     </span>
@@ -3768,7 +3768,7 @@ singleQuote: true
 </div>;
 
 <div>
-  {a && (
+  {a&& (
     <span>
       <div>
         <div></div>
