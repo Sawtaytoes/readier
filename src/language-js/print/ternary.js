@@ -348,7 +348,7 @@ function printTernary(path, options, print) {
 
   const result = maybeGroup([
     printTernaryTest(path, options, print),
-    forceNoIndent ? parts : indent(parts),
+    forceNoIndent ? parts : parts,
     isConditionalExpression && breakClosingParen && !shouldExtraIndent
       ? softline
       : "",
