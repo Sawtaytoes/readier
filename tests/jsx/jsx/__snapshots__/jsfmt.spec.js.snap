@@ -791,8 +791,8 @@ normalModeNonBreaking ? "a" : "b";
 // This ConditionalExpression has no JSXElements so it prints in normal mode.
 // Its consequent is very long, so it breaks out to multiple lines.
 normalModeBreaking
-  ? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
-  : "c";
+? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
+: "c";
 
 // This ConditionalExpression prints in JSX mode because its test is a
 // JSXElement. It is non-breaking.
@@ -1090,8 +1090,8 @@ normalModeNonBreaking ? "a" : "b";
 // This ConditionalExpression has no JSXElements so it prints in normal mode.
 // Its consequent is very long, so it breaks out to multiple lines.
 normalModeBreaking
-  ? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
-  : "c";
+? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
+: "c";
 
 // This ConditionalExpression prints in JSX mode because its test is a
 // JSXElement. It is non-breaking.
@@ -1389,8 +1389,8 @@ normalModeNonBreaking ? 'a' : 'b';
 // This ConditionalExpression has no JSXElements so it prints in normal mode.
 // Its consequent is very long, so it breaks out to multiple lines.
 normalModeBreaking
-  ? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
-  : 'c';
+? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
+: 'c';
 
 // This ConditionalExpression prints in JSX mode because its test is a
 // JSXElement. It is non-breaking.
@@ -1688,8 +1688,8 @@ normalModeNonBreaking ? 'a' : 'b';
 // This ConditionalExpression has no JSXElements so it prints in normal mode.
 // Its consequent is very long, so it breaks out to multiple lines.
 normalModeBreaking
-  ? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
-  : 'c';
+? johnJacobJingleHeimerSchmidtHisNameIsMyNameTooWheneverWeGoOutThePeopleAlwaysShoutThereGoesJohnJacobJingleHeimerSchmidtYaDaDaDaDaDaDa
+: 'c';
 
 // This ConditionalExpression prints in JSX mode because its test is a
 // JSXElement. It is non-breaking.

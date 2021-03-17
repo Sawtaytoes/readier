@@ -80,74 +80,74 @@ c */? foo : bar : bar;
 
 =====================================output=====================================
 type A = B extends T
-  ? // comment
-    foo
-  : bar;
+? // comment
+  foo
+: bar;
 
 type A = B extends test /* comment
   comment
       comment
 */
-  ? foo
-  : bar;
+? foo
+: bar;
 
 type T = test extends B
-  ? /* comment
+? /* comment
           comment
     comment
           comment
   */
-    foo
-  : bar;
+  foo
+: bar;
 
 type T = test extends B
-  ? /* comment
+? /* comment
        comment
        comment
        comment
     */
-    foo
-  : test extends B
-  ? /* comment
+  foo
+: test extends B
+? /* comment
   comment
     comment */
-    foo
-  : bar;
+  foo
+: bar;
 
 type T = test extends B ? /* comment */ foo : bar;
 
 type T = test extends B
-  ? foo
-  : /* comment
+? foo
+: /* comment
          comment
      comment
            comment
     */
-    bar;
+  bar;
 
 type T = test extends B
-  ? foo
-  : /* comment
+? foo
+: /* comment
          comment
      comment
            comment
     */
-  test extends B
-  ? foo
-  : /* comment
+test extends B
+? foo
+: /* comment
   comment
     comment
    */
-    bar;
+  bar;
 
 type T = test extends B ? foo : /* comment */ bar;
 
 type T = test extends B
-  ? test extends B /* c
+? test extends B /* c
 c */
-    ? foo
-    : bar
-  : bar;
+  ? foo
+  : bar
+: bar;
 
 ================================================================================
 `;
@@ -197,10 +197,10 @@ type U2 = (new () => X) extends T ? U : V;
 
 =====================================output=====================================
 export type DeepReadonly<T> = T extends any[]
-  ? DeepReadonlyArray<T[number]>
-  : T extends object
-  ? DeepReadonlyObject<T>
-  : T;
+? DeepReadonlyArray<T[number]>
+: T extends object
+? DeepReadonlyObject<T>
+: T;
 
 type NonFunctionPropertyNames<T> = {
   [K in keyof T]: T[K] extends Function ? never : K;
@@ -213,16 +213,16 @@ type DeepReadonlyObject<T> = {
 };
 
 type TypeName<T> = T extends string
-  ? "string"
-  : T extends number
-  ? "number"
-  : T extends boolean
-  ? "boolean"
-  : T extends undefined
-  ? "undefined"
-  : T extends Function
-  ? "function"
-  : "object";
+? "string"
+: T extends number
+? "number"
+: T extends boolean
+? "boolean"
+: T extends undefined
+? "undefined"
+: T extends Function
+? "function"
+: "object";
 
 type Type01 = 0 extends (1 extends 2 ? 3 : 4) ? 5 : 6;
 type Type02 = 0 extends (1 extends 2 ? 3 : 4) ? 5 : 6;
@@ -264,16 +264,16 @@ type Unpacked<T> =
 type TestReturnType<T extends (...args: any[]) => any> = T extends (
   ...args: any[]
 ) => infer R
-  ? R
-  : any;
+? R
+: any;
 
 type Unpacked<T> = T extends (infer U)[]
-  ? U
-  : T extends (...args: any[]) => infer U
-  ? U
-  : T extends Promise<infer U>
-  ? U
-  : T;
+? U
+: T extends (...args: any[]) => infer U
+? U
+: T extends Promise<infer U>
+? U
+: T;
 
 ================================================================================
 `;
@@ -305,31 +305,31 @@ type Foo3 =
 =====================================output=====================================
 type Foo = (
   ThingamabobberFactory extends AbstractThingamabobberFactory
-    ? GobbledygookProvider
-    : CompositeGobbledygookProvider
+  ? GobbledygookProvider
+  : CompositeGobbledygookProvider
 ) extends DoubleGobbledygookProvider
-  ? UniqueDalgametreService
-  : CompositeZamazingoResolver;
+? UniqueDalgametreService
+: CompositeZamazingoResolver;
 
 type Foo2 = DoubleGobbledygookProvider extends (
   ThingamabobberFactory extends AbstractThingamabobberFactory
-    ? GobbledygookProvider
-    : CompositeGobbledygookProvider
+  ? GobbledygookProvider
+  : CompositeGobbledygookProvider
 )
-  ? UniqueDalgametreService
-  : CompositeZamazingoResolver;
+? UniqueDalgametreService
+: CompositeZamazingoResolver;
 
 type Foo3 = (
   ThingamabobberFactory extends AbstractThingamabobberFactory
-    ? GobbledygookProvider
-    : CompositeGobbledygookProvider
+  ? GobbledygookProvider
+  : CompositeGobbledygookProvider
 ) extends (
   DoubleGobbledygookProvider extends MockGobbledygookProvider
-    ? MockThingamabobberFactory
-    : ThingamabobberFactory
+  ? MockThingamabobberFactory
+  : ThingamabobberFactory
 )
-  ? UniqueDalgametreService
-  : CompositeZamazingoResolver;
+? UniqueDalgametreService
+: CompositeZamazingoResolver;
 
 ================================================================================
 `;
