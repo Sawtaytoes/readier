@@ -266,9 +266,9 @@ view[0];
 // ↪ TypeError: Cannot mix BigInt and other types, use explicit conversions
 
 1n * 2 +
-  // ↪ TypeError: Cannot mix BigInt and other types, use explicit conversions
+// ↪ TypeError: Cannot mix BigInt and other types, use explicit conversions
 
-  1n;
+1n;
 // ↪ TypeError: Cannot convert a BigInt value to a number
 
 Number(1n);
@@ -1525,14 +1525,14 @@ let newScore = boundScore(0, 100, add(7, double(person.score)));
 // https://github.com/valtech-nyc/proposal-fsharp-pipelines
 
 promise
-  |> await
-  |> (x) => doubleSay(x, ", ")
-  |> capitalize
-  |> (x) => x + "!"
-  |> (x) => new User.Message(x)
-  |> (x) => stream.write(x)
-  |> await
-  |> console.log;
+|> await
+|> (x) => doubleSay(x, ", ")
+|> capitalize
+|> (x) => x + "!"
+|> (x) => new User.Message(x)
+|> (x) => stream.write(x)
+|> await
+|> console.log;
 
 const result = exclaim(capitalize(doubleSay("hello")));
 result; //=> "Hello, hello!"
@@ -1656,13 +1656,13 @@ value
 // https://github.com/js-choi/proposal-smart-pipelines
 
 value
-  |> await #
-  |> doubleSay(#, ", ")
-  |> capitalize // This is a function call.
-  |> # + "!"
-  |> new User.Message(#)
-  |> await #
-  |> console.log; // This is a method call.
+|> await #
+|> doubleSay(#, ", ")
+|> capitalize // This is a function call.
+|> # + "!"
+|> new User.Message(#)
+|> await #
+|> console.log; // This is a method call.
 
 // (The # token isn't final; it might instead be @ or ? or %.)
 

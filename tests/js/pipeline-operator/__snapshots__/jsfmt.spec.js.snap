@@ -35,11 +35,11 @@ bifornCringerMoshedPerplexSawder
 
 =====================================output=====================================
 bifornCringerMoshedPerplexSawder
-  |> foo1
-  |> foo2 /* comment1 */
-  |> foo3 /* comment2 */
-  |> kochabCooieGameOnOboleUnweave
-  |> glimseGlyphsHazardNoopsTieTie;
+|> foo1
+|> foo2 /* comment1 */
+|> foo3 /* comment2 */
+|> kochabCooieGameOnOboleUnweave
+|> glimseGlyphsHazardNoopsTieTie;
 
 ================================================================================
 `;
@@ -122,14 +122,14 @@ const f = x |> (f) => f |> f;
 
 =====================================output=====================================
 promise
-  |> await
-  |> (x) => doubleSay(x, ", ")
-  |> capitalize
-  |> (x) => x + "!"
-  |> (x) => new User.Message(x)
-  |> (x) => stream.write(x)
-  |> await
-  |> console.log;
+|> await
+|> (x) => doubleSay(x, ", ")
+|> capitalize
+|> (x) => x + "!"
+|> (x) => new User.Message(x)
+|> (x) => stream.write(x)
+|> await
+|> console.log;
 
 const result = "hello" |> doubleSay |> capitalize |> exclaim;
 
@@ -252,9 +252,9 @@ let newScore =
 
 function createPerson(attrs) {
   attrs
-    |> bounded("age", 1, 100)
-    |> format("name", /^[a-z]$/i)
-    |> Person.insertIntoDatabase;
+  |> bounded("age", 1, 100)
+  |> format("name", /^[a-z]$/i)
+  |> Person.insertIntoDatabase;
 }
 
 foo |> bar ?? baz;
@@ -357,14 +357,14 @@ v |> #.method() |> f;
 a |> await # |> # * 3;
 
 foo
-  |> await #
-  |> # || throw new Error(\`foo \${bar1}\`)
-  |> bar2(#, ", ")
-  |> bar3
-  |> # + "!"
-  |> new Bar.Foo(#)
-  |> await bar.bar(#)
-  |> console.log;
+|> await #
+|> # || throw new Error(\`foo \${bar1}\`)
+|> bar2(#, ", ")
+|> bar3
+|> # + "!"
+|> new Bar.Foo(#)
+|> await bar.bar(#)
+|> console.log;
 
 const result = "hello" |> doubleSay |> capitalize(#, "foo") |> exclaim;
 

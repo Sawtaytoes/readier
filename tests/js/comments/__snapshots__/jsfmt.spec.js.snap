@@ -219,74 +219,74 @@ function bitwiseXor() {
 =====================================output=====================================
 function addition() {
   0 +
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function multiplication() {
   0 *
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function division() {
   0 /
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function substraction() {
   0 -
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function remainder() {
   0 %
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function exponentiation() {
   0 **
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function leftShift() {
   0 <<
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function rightShift() {
   0 >>
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function unsignedRightShift() {
   0 >>>
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function bitwiseAnd() {
   0 &
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function bitwiseOr() {
   0 |
-    // Comment
-    x
+  // Comment
+  x
 }
 
 function bitwiseXor() {
   0 ^
-    // Comment
-    x
+  // Comment
+  x
 }
 
 ================================================================================
@@ -373,74 +373,74 @@ function bitwiseXor() {
 =====================================output=====================================
 function addition() {
   0 +
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function multiplication() {
   0 *
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function division() {
   0 /
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function substraction() {
   0 -
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function remainder() {
   0 %
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function exponentiation() {
   0 **
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function leftShift() {
   0 <<
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function rightShift() {
   0 >>
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function unsignedRightShift() {
   0 >>>
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function bitwiseAnd() {
   0 &
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function bitwiseOr() {
   0 |
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 function bitwiseXor() {
   0 ^
-    // Comment
-    x;
+  // Comment
+  x;
 }
 
 ================================================================================
@@ -669,8 +669,8 @@ Math.min(
    * deployment of v0.38.0. To see the error, remove this comment and
    * run flow */
   document.body.scrollHeight -
-    (window.scrollY + window.innerHeight) -
-    devsite_footer_height,
+  (window.scrollY + window.innerHeight) -
+  devsite_footer_height,
   0
 )
 
@@ -700,8 +700,8 @@ Math.min(
    * deployment of v0.38.0. To see the error, remove this comment and
    * run flow */
   document.body.scrollHeight -
-    (window.scrollY + window.innerHeight) -
-    devsite_footer_height,
+  (window.scrollY + window.innerHeight) -
+  devsite_footer_height,
   0
 );
 
@@ -2530,11 +2530,11 @@ const rootEpic = (actions, store) =>
 // optional trailing comma gets moved all the way to the beginning
 const regex = new RegExp(
   "^\\\\s*" + // beginning of the line
-    "name\\\\s*=\\\\s*" + // name =
-    "['\\"]" + // opening quotation mark
-    escapeStringRegExp(target.name) + // target name
-    "['\\"]" + // closing quotation mark
-    ",?$" // optional trailing comma
+  "name\\\\s*=\\\\s*" + // name =
+  "['\\"]" + // opening quotation mark
+  escapeStringRegExp(target.name) + // target name
+  "['\\"]" + // closing quotation mark
+  ",?$" // optional trailing comma
 )
 
 // The comment is moved and doesn't trigger the eslint rule anymore
@@ -2681,11 +2681,11 @@ const rootEpic = (actions, store) =>
 // optional trailing comma gets moved all the way to the beginning
 const regex = new RegExp(
   "^\\\\s*" + // beginning of the line
-    "name\\\\s*=\\\\s*" + // name =
-    "['\\"]" + // opening quotation mark
-    escapeStringRegExp(target.name) + // target name
-    "['\\"]" + // closing quotation mark
-    ",?$" // optional trailing comma
+  "name\\\\s*=\\\\s*" + // name =
+  "['\\"]" + // opening quotation mark
+  escapeStringRegExp(target.name) + // target name
+  "['\\"]" + // closing quotation mark
+  ",?$" // optional trailing comma
 );
 
 // The comment is moved and doesn't trigger the eslint rule anymore
@@ -4310,7 +4310,7 @@ function binaryInBinaryLeft() {
   return (
     // Reason for 42
     42 *
-      84 +
+    84 +
     2
   )
 }
@@ -4572,7 +4572,7 @@ function binaryInBinaryLeft() {
   return (
     // Reason for 42
     42 *
-      84 +
+    84 +
     2
   );
 }

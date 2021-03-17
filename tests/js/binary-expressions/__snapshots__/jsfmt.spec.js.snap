@@ -183,22 +183,22 @@ printWidth: 80
   eeeeeeeeeeeeeeeeeeeeeeeee
 )(
   aaaaaaaaaaaaaaaaaaaaaaaaa &&
-    bbbbbbbbbbbbbbbbbbbbbbbbb &&
-    ccccccccccccccccccccccccc &&
-    ddddddddddddddddddddddddd &&
-    eeeeeeeeeeeeeeeeeeeeeeeee
+  bbbbbbbbbbbbbbbbbbbbbbbbb &&
+  ccccccccccccccccccccccccc &&
+  ddddddddddddddddddddddddd &&
+  eeeeeeeeeeeeeeeeeeeeeeeee
 )(
   aaaaaaaaaaaaaaaaaaaaaaaaa &&
-    bbbbbbbbbbbbbbbbbbbbbbbbb &&
-    ccccccccccccccccccccccccc &&
-    ddddddddddddddddddddddddd &&
-    eeeeeeeeeeeeeeeeeeeeeeeee
+  bbbbbbbbbbbbbbbbbbbbbbbbb &&
+  ccccccccccccccccccccccccc &&
+  ddddddddddddddddddddddddd &&
+  eeeeeeeeeeeeeeeeeeeeeeeee
 )(
   aaaaaaaaaaaaaaaaaaaaaaaaa &&
-    bbbbbbbbbbbbbbbbbbbbbbbbb &&
-    ccccccccccccccccccccccccc &&
-    ddddddddddddddddddddddddd &&
-    eeeeeeeeeeeeeeeeeeeeeeeee
+  bbbbbbbbbbbbbbbbbbbbbbbbb &&
+  ccccccccccccccccccccccccc &&
+  ddddddddddddddddddddddddd &&
+  eeeeeeeeeeeeeeeeeeeeeeeee
 );
 
 ================================================================================
@@ -272,41 +272,41 @@ a =
   offset;
 
 a +
-  a +
-  a + // comment
-  a +
-  a;
+a +
+a + // comment
+a +
+a;
 
 a &&
-  longLongLongLongLongLongLongLongLong &&
-  longLongLongLongLongLongLongLongLong && // comment
-  longLongLongLongLongLongLongLongLong &&
-  longLongLongLongLongLongLongLongLong;
+longLongLongLongLongLongLongLongLong &&
+longLongLongLongLongLongLongLongLong && // comment
+longLongLongLongLongLongLongLongLong &&
+longLongLongLongLongLongLongLongLong;
 
 a ||
-  longLongLongLongLongLongLongLongLong ||
-  longLongLongLongLongLongLongLongLong || // comment
-  longLongLongLongLongLongLongLongLong ||
-  longLongLongLongLongLongLongLongLong;
+longLongLongLongLongLongLongLongLong ||
+longLongLongLongLongLongLongLongLong || // comment
+longLongLongLongLongLongLongLongLong ||
+longLongLongLongLongLongLongLongLong;
 
 var a = x(
   abifornCringerMoshedPerplexSawder +
-    kochabCooieGameOnOboleUnweave + // f
-    glimseGlyphsHazardNoopsTieTie +
-    bifornCringerMoshedPerplexSawder
+  kochabCooieGameOnOboleUnweave + // f
+  glimseGlyphsHazardNoopsTieTie +
+  bifornCringerMoshedPerplexSawder
 );
 
 foo[
   a +
-    a + // comment
-    a +
-    bar[
-      b +
-        b +
-        b + // comment
-        b +
-        b
-    ]
+  a + // comment
+  a +
+  bar[
+    b +
+    b +
+    b + // comment
+    b +
+    b
+  ]
 ];
 
 !(
@@ -568,13 +568,13 @@ prevState = prevState || {
 };
 
 prevState = prevState ||
-  defaultState || {
-    catalogs: [],
-    loadState: LOADED,
-    opened: false,
-    searchQuery: "",
-    selectedCatalog: null,
-  };
+defaultState || {
+  catalogs: [],
+  loadState: LOADED,
+  opened: false,
+  searchQuery: "",
+  selectedCatalog: null,
+};
 
 prevState =
   prevState ||
@@ -587,13 +587,13 @@ prevState =
   });
 
 prevState = prevState ||
-  (useDefault && defaultState) || {
-    catalogs: [],
-    loadState: LOADED,
-    opened: false,
-    searchQuery: "",
-    selectedCatalog: null,
-  };
+(useDefault && defaultState) || {
+  catalogs: [],
+  loadState: LOADED,
+  opened: false,
+  searchQuery: "",
+  selectedCatalog: null,
+};
 
 this.steps = steps || [
   {
@@ -643,10 +643,10 @@ const create2 = () => {
 
 const obj = {
   state: shouldHaveState &&
-    stateIsOK && {
-      loadState: LOADED,
-      opened: false,
-    },
+  stateIsOK && {
+    loadState: LOADED,
+    opened: false,
+  },
   loadNext: (stateIsOK && hasNext) || {
     skipNext: true,
   },
@@ -707,8 +707,8 @@ printWidth: 80
 
 <div>
   {!isJellyfishEnabled &&
-    diffUpdateMessageInput != null &&
-    this.state.isUpdateMessageEmpty}
+  diffUpdateMessageInput != null &&
+  this.state.isUpdateMessageEmpty}
 </div>;
 
 <div
@@ -849,14 +849,14 @@ function foo() {
 
 function foo2() {
   return this.hasPlugin("dynamicImports") &&
-    this.lookahead().type === tt.parenLeft.right
+  this.lookahead().type === tt.parenLeft.right
   ? true
   : false;
 }
 
 function foo3() {
   return this.calculate().compute().first.numberOfThings >
-    this.calculate().compute().last.numberOfThings
+  this.calculate().compute().last.numberOfThings
   ? true
   : false;
 }
@@ -892,10 +892,10 @@ defaultContent.filter(defaultLocale => {
 
 =====================================output=====================================
 this._cumulativeHeights &&
-  Math.abs(
-    this._cachedItemHeight(this._firstVisibleIndex + i) -
-      this._provider.fastHeight(i + this._firstVisibleIndex)
-  ) > 1;
+Math.abs(
+  this._cachedItemHeight(this._firstVisibleIndex + i) -
+  this._provider.fastHeight(i + this._firstVisibleIndex)
+) > 1;
 
 foooooooooooooooooooooooooooooooooooooooooooooooooooooooooo(
   aaaaaaaaaaaaaaaaaaa

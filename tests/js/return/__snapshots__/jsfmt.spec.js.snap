@@ -36,7 +36,7 @@ function f() {
     property.isIdentifier() &&
     FUNCTIONS[property.node.name] &&
     (object.isIdentifier(JEST_GLOBAL) ||
-      (callee.isMemberExpression() && shouldHoistExpression(object))) &&
+    (callee.isMemberExpression() && shouldHoistExpression(object))) &&
     FUNCTIONS[property.node.name](expr.get("arguments"))
   );
 
