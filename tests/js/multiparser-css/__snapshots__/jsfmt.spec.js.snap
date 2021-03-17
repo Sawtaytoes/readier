@@ -224,11 +224,11 @@ const StyledH1 = styled.div\`
   color: \${(props) => props.textColor};
   \${(props) =>
     props.center
-      ? \` display: flex;
+    ? \` display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;\`
-      : ""}
+    : ""}
   @media (max-width: \${(props) =>
     props.noBreakPoint ? "0" : constants.layout.breakpoint.break1}px) {
     font-size: 2em;
