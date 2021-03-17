@@ -46,10 +46,12 @@ function printMemberLookup(path, options, print) {
   const optional = printOptionalToken(path);
 
   if (!node.computed) {
+    // return [optional, softline, ".", property]; // READIER
     return [optional, ".", property];
   }
 
   if (!node.property || isNumericLiteral(node.property)) {
+    // return [optional, indent([softline, "[", property, "]"])]; // READIER
     return [optional, "[", property, "]"];
   }
 
